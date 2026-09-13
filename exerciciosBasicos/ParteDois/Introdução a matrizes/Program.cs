@@ -40,3 +40,17 @@ foreach (int itens in inventario)
 }
 
 Console.WriteLine ($"Itens no inventário: {soma}");
+
+//Reportar as IDs de pedido que precisam de uma investigação mais aprofundada
+
+//inicializar a matriz
+string[] IDs = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
+
+//paraca cada string dentro de IDs, se começar com B escrever na tela 
+foreach (string IDAnalisado in IDs)
+{
+    if (IDAnalisado.StartsWith("B"))
+    {
+        Console.WriteLine(IDAnalisado);
+    }
+}
